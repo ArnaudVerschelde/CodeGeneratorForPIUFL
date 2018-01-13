@@ -1,0 +1,124 @@
+﻿<Window x:Class="PI_UFL_ini_bat_file_creator.Wpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PI_UFL_ini_bat_file_creator.Wpf"
+        mc:Ignorable="d"
+        Title="UFL configuration creator" 
+                Height="386.103" 
+                Width="525" 
+                MinHeight="350"
+                MinWidth="525"
+                WindowStartupLocation="CenterScreen" 
+                Topmost="True" 
+                Icon="Resources/thejoker.ico" 
+                Loaded="Window_Loaded" Closing="Window_Closing">
+    <Grid>
+        <GroupBox x:Name="gbxInput" 
+                  Header="Input" 
+                  Margin="10,10,10,0" 
+                  Height="100" 
+                  VerticalAlignment="Top">
+            <Grid>
+                <Label x:Name="lblUnitCode" 
+                       Content="Unit code :" 
+                       Padding="0" 
+                       HorizontalAlignment="Left" 
+                       Margin="10,10,0,0" 
+                       VerticalAlignment="Top" 
+                       VerticalContentAlignment="Center"/>
+                <Label x:Name="lblUnitName" 
+                       Content="Unit name :" 
+                       Padding="0" 
+                       HorizontalAlignment="Left" 
+                       Margin="10,45,0,0" 
+                       VerticalAlignment="Top" 
+                       VerticalContentAlignment="Center"/>
+                <TextBox x:Name="txtUnitCode" 
+                         HorizontalAlignment="Left" 
+                         Height="23" Margin="85,10,0,0" 
+                         TextWrapping="Wrap" 
+                         Text="" 
+                         VerticalAlignment="Top" 
+                         Width="132" 
+                         HorizontalContentAlignment="Right"/>
+                <TextBox x:Name="txtUnitName" 
+                         HorizontalAlignment="Left" 
+                         Height="23" Margin="85,45,0,0" 
+                         TextWrapping="Wrap" 
+                         Text="" 
+                         VerticalAlignment="Top" 
+                         Width="132" 
+                         HorizontalContentAlignment="Right"/>
+                <Label x:Name="lblDataSource" 
+                       Content="Data source :" 
+                       Padding="0" 
+                       Margin="237,48,169,0" 
+                       VerticalAlignment="Top" 
+                       VerticalContentAlignment="Center"/>
+                <ComboBox x:Name="cmbDataSource" 
+                          Margin="333,45,10,0" 
+                          VerticalAlignment="Top"/>
+                <Label x:Name="lblDataType" 
+                    Content="Data type :" 
+                    Padding="0" 
+                    Margin="237,13,179,0" 
+                    VerticalAlignment="Top" 
+                    VerticalContentAlignment="Center"/>
+                <ComboBox x:Name="cmbDataType" 
+                    Margin="333,10,10,0" 
+                    VerticalAlignment="Top"/>
+            </Grid>
+        </GroupBox>
+
+        <GroupBox x:Name="gbxExcel" 
+                  Header="Excel file" 
+                  Margin="10,115,10,0" 
+                  Height="77" 
+                  VerticalAlignment="Top">
+            <Grid>
+                <TextBlock x:Name="txbExcelFile" 
+                         HorizontalAlignment="Left" 
+                         Height="35" Margin="10,10,0,0" 
+                         TextWrapping="Wrap" 
+                         Text=""
+                         VerticalAlignment="Top" 
+                         Width="369"/>
+                <Button x:Name="btnExcelFile" 
+                        Content="Search excel" 
+                        Margin="384,15,10,0" 
+                        VerticalAlignment="Top"
+                        Height="25" Click="btnExcelFile_Click"/>
+            </Grid>
+        </GroupBox>
+        <GroupBox x:Name="gbxOutputFiles" 
+            Header="Output path ini and bat file" 
+            Margin="10,197,10,0" 
+            Height="65" 
+            VerticalAlignment="Top">
+            <Grid Margin="0,0,0,-12">
+                <TextBox x:Name="txtOutput" 
+                         HorizontalAlignment="Left" 
+                         Height="35" 
+                         Margin="10,10,0,0" 
+                         TextWrapping="Wrap" 
+                         Text="" 
+                         IsReadOnly="False" 
+                         VerticalAlignment="Top" 
+                         Width="369"/>
+                <Button x:Name="btnOutput" 
+                        Content="Output path" 
+                        Margin="384,16,10,0" Click="btnOutput_Click" Height="23" VerticalAlignment="Top"/>
+            </Grid>
+        </GroupBox>
+        <Button x:Name="btnCreateFiles" 
+                Content="Create files" 
+                Margin="70,272,70,0"
+                Height="33" 
+                VerticalAlignment="Top" Click="btnCreateFiles_Click"/>
+        <StatusBar Margin="0,316,0,0">
+            <Label x:Name="lblStatusBar" Padding="0" Content="" Width="370" FontSize="10" VerticalAlignment="Center" HorizontalAlignment="Left" FontWeight="Bold" Height="18"/>
+        </StatusBar>
+    </Grid>
+</Window>

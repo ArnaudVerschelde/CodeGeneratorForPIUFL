@@ -1,0 +1,36 @@
+'UFL service name : 03703
+Unit : H037 Congo River
+Device : PLC
+
+
+[INTERFACE]
+PLUG-IN=AsciiFiles.dll
+
+
+[PLUG-IN]
+IFM=D:\interfaceData\H037\PLC\PLC_H037*.txt
+ERR = _BAD
+IFS=C
+NEWLINE=13,10
+PURGETIME=5s
+REN _OK
+PFN=TRUE
+PFN_PREFIX = DATAFILE_*
+'UFL service name : 03703
+Unit : H037 Congo River
+Device : PLC
+
+
+[INTERFACE]
+PLUG-IN=AsciiFiles.dll
+
+
+[PLUG-IN]
+IFM=D:\interfaceData\H037\PLC\PLC_H037*.txt
+ERR = _BAD
+IFS=C
+NEWLINE=13,10
+PURGETIME=5s
+REN _OK
+PFN=TRUE
+PFN_PREFIX = DATAFILE_*
