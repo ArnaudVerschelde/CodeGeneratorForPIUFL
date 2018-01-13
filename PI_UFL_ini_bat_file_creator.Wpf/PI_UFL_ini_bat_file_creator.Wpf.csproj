@@ -89,6 +89,9 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="Example excel files\H037_DTPS_tags.xlsx" />
+    <None Include="Example excel files\H037_PLC_tags.xlsx" />
+    <None Include="Example excel files\H040_FUEL_tags.xlsx" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
