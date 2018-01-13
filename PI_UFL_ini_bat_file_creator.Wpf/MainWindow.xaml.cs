@@ -53,9 +53,6 @@ namespace PI_UFL_ini_bat_file_creator.Wpf
             cmbDataSource.Items.Add("ENGINE ROOM");
             cmbDataSource.Items.Add("ENGINE ROOM AMS");
             cmbDataSource.Items.Add("ENGINE ROOM FUEL");
-            // TODO AV : remove this, because it is testcode
-            txtUnitCode.Text = "H037";
-            txtUnitName.Text = "Congo River";
             cmbDataType.Text = "ASCII";
             cmbDataSource.Text = "PLC";
         }
